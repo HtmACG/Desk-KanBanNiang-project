@@ -1,0 +1,38 @@
+{
+  "name": "KanbanNiang",
+  "version": "1.0.6",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourapp.KanbanNiang",
+    "productName": "KanbanNiang",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "./project/icon/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "./project/icon/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "./project/icon"
+    }
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.14.13"
+  }
+}
+
