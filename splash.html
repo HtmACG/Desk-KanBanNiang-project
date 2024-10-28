@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		/* 设置页面背景颜色 */
+		body {
+		    margin: 0;
+		    padding: 0;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    height: 100vh;
+		    overflow: hidden; /* 禁用页面滚动条 */
+		}
+		
+		/* 图片样式 */
+		.responsive-image {
+		    max-width: 100%;
+		    height: auto;
+		    display: block;
+		    margin: 0 auto;
+		}
+		
+		/* 隐藏滚动条 */
+		/* 对于Webkit浏览器（如Chrome, Safari） */
+		::-webkit-scrollbar {
+		    display: none;
+		}
+		
+		/* 对于Firefox */
+		html {
+		    scrollbar-width: none;
+		}
+	</style>
+</head>
+<body>
+    <div>
+        <img src="./project/path/l2dlogo.png" alt="示例图片" class="responsive-image">
+    </div>
+</body>
+</html>

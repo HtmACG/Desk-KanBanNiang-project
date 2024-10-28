@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>关于 Desk-KanbanNiang</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./project/path/775793564681595144.png" alt="Poster" class="poster">
+        <div class="content">
+            <h1>KanbanNiang By HutaoMU OS</h1>
+            <p>Desk-KanbanNiang(桌面看板娘)v1.8，内置模型，一款简易实用，功能全面的桌面看板娘软件。</p>
+			<p>一群QQ:783199500 | 二群QQ：809781214</p>
+			<p>本软件所有模型均收集自互联网，版权均归原公司/个人所有。您可将本软件资源用于学习、非营利性的网站或项目，不得用于商业使用（付费分发售卖资源、二次修改用于盈利等）因违规使用本软件资源导致侵权，本软件作者不负任何责任。</p>
+            <p>最后更新日期为：2024/10/28</p>
+            <button class="update-btn" onclick="openSourcePage()">开源地址</button>
+			<button class="update-btn" onclick="open1SourcePage()">软件网站</button>
+			<button class="update-btn" onclick="open3SourcePage()">模型地址</button>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="feedback"></div>
+            <div class="model-info-title">模型列表：</div>
+            <textarea class="model-paths" id="modelPaths"></textarea>
+            <div class="footer">
+                <p>本软件基于开源技术构建，使用了Live2D,Electron,HTML5,CSS3,JavaScript。一言API：沐小憨API</p>
+                <p>© 2024 胡桃木实验室. 保留所有权利。</p>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+	<script src="./project/js/mod_config.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font: 16px / 1.5 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+    letter-spacing: .03em;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #e4e4e4;
+}
+
+:root {
+    --background-color: #409EFF;
+    --bgColor: #F4F4F4;
+    --text-deep: #494949;
+    --text-shallow: #727272;
+    --text-color-grey: #999999;
+    --deep-background: #f9f9f9;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--background-color);
+    background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .2) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 75%, transparent 0, transparent);
+}
+
+.container {
+    background-color: #fff;
+    /* padding: 40px; */
+    border-radius: 0px;
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+}
+
+.poster {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 15px;
+    -webkit-user-drag: none;
+}
+
+.content {
+    width: 70%;
+}
+
+h1 {
+    /* margin: 0 0 20px; */
+    color: #888;
+    font-weight: 300;
+}
+
+p {
+    color: #777790;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.update-btn {
+    background-color: #72b6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    /* font-size: 16px; */
+    /* margin-top: 20px; */
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #007BFF;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.model-info-title {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.model-paths {
+    margin-top: 10px;
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* border-radius: 5px; */
+    font-size: 14px;
+    color: #333;
+    resize: none;
+}
